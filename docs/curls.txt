@@ -1,0 +1,9 @@
+
+curl -i http://localhost:8080/docs
+curl -i http://localhost:8080/redoc
+curl -i http://localhost:8080/health
+
+# invoke
+curl -i -X POST -H 'Content-Type: application/json' -d '{"messages":[{"role":"user", "content":"how are you?"},{"role":"assistant", "content":"yes, I am fine"},{"role":"user", "content":"how old are you?"}]}' http://localhost:8080/chat/completions
+
+curl -i -X POST -H 'Content-Type: application/json' -d '{"messages":[{"role":"user", "content":"how are you?"},{"role":"assistant", "content":"yes, I am fine"},{"role":"user", "content":"我的猫最近经常呕吐，我该怎么办？"}]}' http://localhost:8080/chat/completions
