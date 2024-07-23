@@ -7,3 +7,5 @@ curl -i http://localhost:8080/health
 curl -i -X POST -H 'Content-Type: application/json' -d '{"messages":[{"role":"user", "content":"how are you?"},{"role":"assistant", "content":"yes, I am fine"},{"role":"user", "content":"how old are you?"}]}' http://localhost:8080/chat/completions
 
 curl -i -X POST -H 'Content-Type: application/json' -d '{"messages":[{"role":"user", "content":"how are you?"},{"role":"assistant", "content":"yes, I am fine"},{"role":"user", "content":"我的猫最近经常呕吐，我该怎么办？"}]}' http://localhost:8080/chat/completions
+
+curl -i -X POST -H 'Content-Type: application/json' -d '{"messages":[{"role":"user", "content":"how are you?"},{"role":"assistant", "content":"yes, I am fine"},{"role":"user", "content":"我的猫最近经常呕吐，我该怎么办？"}]}' http://10.76.3.98:8080/chat/completions

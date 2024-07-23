@@ -3,5 +3,5 @@ class AppConfig:
     TRUSTED_HOSTS = [
         "localhost",
         "127.0.0.1",
-        "*.ecosaas.com",
+        "10.76.3.98",
     ]
